@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;1,300&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;1,300&family=Manrope:wght@200&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+        .material-symbols-outlined {
+            
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 48
+              
+            }
+        </style>
+        
+        
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /><link href="file.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Grandfrere Losah: je suis jeune et je porte le flambeau de christ allumé</title>
+    <link href="head-foot/foot.jpg" rel="icon" type="image/png" sizes="150% "  >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /><link href="file.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Grandfrere Losah: je suis jeune et je porte le flambeau de christ allumé</title>
+    <link href="head-foot/foot.jpg" rel="icon" type="image/png" sizes="150% "  >
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+      
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="head-foot/head.png" width="75%" height="75%" alt="Papermag Magazine"></a>
+                <form action="#" class="searchform order-sm-start order-lg-last">
+                    <div class="form-group d-flex">
+                        <input type="text" class="form-control pl-3" placeholder="Rechercher...">
+                        <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+                    </div>
+                </form>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item active"><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="nav-item"><a href="text.html" class="nav-link">Émissions</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="live.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Live</a>
+                          
+                        </li>
+                        <li class="nav-item"><a href="voir.html" class="nav-link">Voir+</a></li>
+                        <li class="nav-item"><a href="podcast.html" class="nav-link">Podcast</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+       
+    </header> 
+    
+        <div class="countdown" >
+            <div class="countdown-title" style=" text-align: center;">Le direct commence dans :</div>
+            <div class="countdown-clock">
+                <span id="days"  style="text-align: center; ">00</span>
+                <span class="countdown-label"  style="text-align: center;padding-bottom: 0;">Jours</span>
+               
+                <span id="hours"  style="text-align: center;">00</span>
+                <span class="countdown-label"  style=" text-align: center;padding-bottom: 0;">Heures</span>
+                
+                <span id="minutes"  style="text-align: center;">00</span>
+                <span class="countdown-label"  style=" text-align: center;padding-bottom: 0;">Minutes</span>
+                
+                <span id="seconds"  style="text-align: center;">00</span>
+                <span class="countdown-label"  style=" text-align: center;padding-bottom: 0;">Secondes</span>
+            </div>
+        </div>
+
+   
+
+<script>
+    // Fonction pour mettre à jour le compte à rebours
+    function updateCountdown() {
+        // Date et heure actuelle
+        const now = new Date();
+
+        // Date de début du direct (vendredi à 20h00)
+        const directStartDate = new Date();
+        directStartDate.setHours(20, 0, 0, 0);
+
+        // Jour de la semaine (0 = dimanche, 1 = lundi, ..., 6 = samedi)
+        const dayOfWeek = directStartDate.getDay();
+
+        // Calcul du temps restant jusqu'au prochain vendredi
+        const daysUntilFriday = (5 + 7 - dayOfWeek) % 7;
+        const timeUntilFriday = daysUntilFriday * 24 * 60 * 60 * 1000;
+
+        // Calcul du temps restant jusqu'à 20h00
+        const hoursUntil20 = 20 - now.getHours();
+        const minutesUntil20 = 60 - now.getMinutes();
+        const secondsUntil20 = 60 - now.getSeconds();
+
+        // Calcul du temps total restant
+        const timeRemaining = timeUntilFriday + hoursUntil20 * 60 * 60 * 1000 + minutesUntil20 * 60 * 1000 + secondsUntil20 * 1000;
+
+        if (timeRemaining <= 0) {
+            // Le direct a commencé, affiche un message approprié
+            document.querySelector(".countdown").innerHTML = "Le direct est en cours !";
+        } else {
+            // Calcule les jours, heures, minutes et secondes restantes
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Met à jour les éléments HTML avec les valeurs calculées
+            document.getElementById("days").textContent = formatTimeUnit(days);
+            document.getElementById("hours").textContent = formatTimeUnit(hours);
+            document.getElementById("minutes").textContent = formatTimeUnit(minutes);
+            document.getElementById("seconds").textContent = formatTimeUnit(seconds);
+        }
+    }
+
+    function formatTimeUnit(unit) {
+        return unit.toString().padStart(2, "0");
+    }
+
+    // Met à jour le compte à rebours toutes les secondes
+    setInterval(updateCountdown, 1000);
+    updateCountdown(); // Appel initial pour éviter l'affichage du 00:00:00 au chargement de la page
+</script>
+
+   <main style="margin-left: 15px; margin-right: 15px; "> 
+    <div class="div1">        
+            <div class="bloc3">
+                <div class="bloc2">
+                
+                    <div class="images" >
+                    
+                        <img alt="imafr" src="image/bck1.png" />
+                        <img alt="imafro" src="image/bck2.png" />
+                        <img alt="imafo" src="image/bck3.png" />
+                        <img alt="imfro" src="image/bck5.png" />
+                        <img alt="imaro" src="image/bck4.png" />
+                    </div>
+                </div>
+                <script>
+                    // Récupérez la liste des éléments d'images
+                    var images = document.querySelectorAll(".images img");
+                    var currentIndex = 0;
+                
+                    // Fonction pour afficher l'image suivante
+                    function showNextImage() {
+                        if (currentIndex < images.length) {
+                            images[currentIndex].style.display = "block";  // Affiche l'image actuelle
+                            currentIndex++;
+                
+                            if (currentIndex < images.length) {
+                                setTimeout(hideCurrentImage, 3000);  // Masque l'image actuelle après 10 secondes
+                            } else {
+                                // Toutes les images ont été affichées, réinitialise l'index et recommence
+                                currentIndex = 0;
+                                setTimeout(showNextImage, 3000);
+                            }
+                        }
+                    }
+                
+                    // Fonction pour masquer l'image actuelle
+                    function hideCurrentImage() {
+                        images[currentIndex - 1].style.display = "none";
+                        showNextImage();
+                    }
+                
+                    // Lancez la première image
+                    showNextImage();
+                </script>
+                
+                
+                <div class="bloc7">
+                    <h1><em style="background-color: red; color: white;">Es-tu prêt à en parler?</em><br>La masturbation et si on en parlait?</h1>
+                    <p>La masturbation concerne beaucoup de gens, et pourtant cela reste un sujet <br> dont on n’ose pas parler. Comment sortir de l’isolement?</p>
+                
+                    <div class="contain">
+                        <button title="Avez-vous une question?"  style="padding: 5px;padding-left: 15px; padding-right: 15px; color: white ; background-color: red;border-color: transparent; font-size: 1.2em;text-align: center; border-radius: 50px;">
+                             Let's go<span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+               </div>
+    
+            </div>
+       
+        <div class="bloc5">
+            <h1>Découvrez Nos Rubriques</h1>
+         </div> 
+         <div class="flexwrap">
+            <a href="./live.html">
+                <div class="containt1">
+                    <span class="material-symbols-outlined">
+                        groups 
+                        <span class="ol">Temoignage<em> Live podcast.</em></span>
+                        </span> 
+                       
+                   
+                 </div>
+
+             </a>
+             <a href="./live.html">
+                <div class="containt2">
+                    <span class="material-symbols-outlined">
+                        handshake 
+                        <span class="ol">Pasteur<em> Live podcast.</em></span>
+                        </span>
+                 </div>
+
+             </a>
+             
+             <a href="./live.html">
+                <div class="containt3">
+                    <span class="material-symbols-outlined">
+                     diversity_2
+                     <span class="ol">Adoration<em> Live  Plenière.</em></span>
+                 </span>
+                     
+              </div>
+
+             </a>
+             
+             <a href="./live.html">
+                <div class="containt4">
+                    <span class="material-symbols-outlined">
+                    diversity_3
+                    <span class="ol">Coaching<em>  Rencontre  Atelier.</em></span>
+                    </span>
+                 </div>
+                
+
+             </a>
+             <a href="./live.html">
+                <div class="containt5">
+                    <span class="material-symbols-outlined">
+                        cheer <em> </em>
+                        <span class="ol">leke pour christ<em>Evangelisation.</em></span>
+                        </span>
+    
+                 </div>
+
+             </a>
+             <a href="./live.html">
+                <div class="containt6">
+                    <span class="material-symbols-outlined">
+                        taunt 
+                        <span class="ol">chill to God<em> Live Shortvideo.</em></span>
+                        <em></em>
+                        </span>
+                  
+                  </div>
+
+             </a>
+            
+            
+             
+             
+              
+         </div>
+         <div class="contain7">
+            <button title="A la decouverte de nos rubriques" href="text.html"  style="padding: 5px;padding-left: 15px; padding-right: 15px; color: white ; background-color: red;border-color: transparent; font-size: 1.2em;text-align: center; border-radius: 50px;">
+                 <a style="text-decoration: none;" href="text.html" >Voir plus +</a>
+            </button>
+        </div>
+        
+         <div class="div3" style="border-radius: 15px; margin-bottom: 10px;">
+            <div class="spot" >
+                <iframe id="lalo" src="https://www.youtube.com/embed/A3lWEDyE9qw?si=pLTkguIe_qbEFtWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="lo" style="left:50%; ">
+                
+                <h1>Des emissions FUN dediées à la Jeunesse Chretienne</h1>
+      
+                <ul>
+                    <li>Trouver son identité dans un monde sans repères</li>
+                    <li>Savoir s’aimer au-delà de ses complexes</li>
+                    <li>Comment trouver la paix</li>
+                    <li>Comment résister à la convoitise, aux tentations, etc.</li>  
+                </ul>
+               <div class="contain">
+               
+                <button title="Avez-vous une question?"  style="height: 40px ; width:auto; position: center ; color: white ; background-color: red;border-color: transparent; font-size: 1.1em;text-align: center;">
+                   Participer à nos Emissions <span class="material-symbols-outlined">arrow_forward</span>
+                 </button>
+                </div>
+            </div>    
+        </div> 
+        
+        <div class="bloc14" style="border-radius: 15px;">
+           
+            <div class="bloc1414">
+                <div class="bloc141" >
+                    <h1><span class="material-symbols-outlined">
+                        heart_plus
+                        </span></h1>
+                    <p>Mouvement spirituel pour but de nous aidé à batir notre jeunesse en Christ</p> 
+                 </div>
+                 <div class="bloc141">
+                    <h1><span class="material-symbols-outlined">
+                        live_tv
+                        </span></h1>
+                    <p>Emissions capsule vidéos et podcast </p>
+                 </div>
+                 <div class="bloc141">
+                    <h1><span class="material-symbols-outlined">
+                        schedule
+                        </span> </h1>
+                    <p>Worship Time Plenière organisé par mois</p>
+                 </div>
+                 <div class="bloc141">
+                    <h1><span class="material-symbols-outlined">
+                        directions_walk
+                        </span></h1>
+                    <p>Moment d'evangelisation denommé LEKE pour CHRIST par mois</p>
+                 </div>  
+
+            </div> 
+          
+         </div>
+         
+         
+         <div class="bloc15">
+            <div class="bloc5">
+                <h1>J'ai une question et je veux savoir plus sur la communauté.</h1>
+             </div> 
+            <div class="bloc1515">
+                <div class="bloc151">
+                    <img src="illustration/illu4.png" alt="Poser sa question">
+                    <h1>Poser sa Question</h1>
+                    <p>Nous organisons des sessions Live d'echange où nous repondons  aux différentes 
+                        question sur votre vie spirituelle et les situations auxquelles vous etes confrontés
+                        en tant que jeune.
+                    </p> 
+                 </div>
+                 <div class="bloc151">
+                    <img src="illustration/illu1.png" alt="comment poser sa question">
+                    <h1>comment?</h1>
+                    <p>Il suffit de remplir le formulaire ci-après pour poser sa préocupation. </p>
+                 </div>
+                 <div class="bloc151">
+                    <img src="illustration/illu2.png" alt="Notre communauté">
+                    <h1>social link</h1>
+                    <p>Nos sessions Live sont organisés sur <a style="text-decoration: none;" href="https://www.instagram.com/ecofier/" target="_blank">instagram</a> et <a style="text-decoration: none;" href="https://www.instagram.com/ecofier/" target="_blank">Zoom</a>. Scanner nos liens sociaux après le formulaire</p>
+                 </div>
+                 <div class="bloc151">
+                    <img src="illustration/illu3.png" alt="Devenir serviteur">
+                    <h1>Devenir serviteur</h1>
+                    <p>veux tu devenir un Serviteur? <br>rejoint une communauté BLOOM  de ta localité et deviens un disciple 
+                        de Christ pour la jeunesse</p>
+                 </div>  
+   
+            </div> 
+          
+         </div> 
+        </main>  
+        
+        
+    </div>
+   
+    
+ 
+     
+   <footer style=" background-color: black;
+color: white;
+width: cover;
+
+display: flex;">
+    <div class="alignitems" style="margin-left: 10%;
+    font-size: 0.8em;">
+            <!-- <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="logo twitter"/></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" alt="logoinstagram"/></a> -->
+            <a href="index.html"><img src="head-foot/foot.jpg"></a>
+        
+            <h1>
+                je suis ton grand frère<br> qui te donne 
+                des astuces pour batir <br>ta jeunnesse
+               en Christ..
+            </h1>
+            <h1>
+                losah@bornbyspirit.com / +2250101533994
+            </h1>
+            <h1>
+                 www.bornbyspirit.com / reconstruit.com
+            </h1>
+            
+    </div>
+    <div class="footend">
+       <ul>
+        <li>Nos programmes</li>
+        <li href="1">Testimony</li>
+        <li>Worship</li>
+        <li>Pastor</li>
+        <li>Coaching</li>
+        <li><span class="material-symbols-outlined" style="color: rgb(167, 5, 167,0, 11, 151);">
+            relax
+            </span>Chill to God</li>  
+    </ul>
+    </div>
+    <div class="footend1">
+       
+        <ul>
+         <li>A propos</li>
+         <li>Live<span class="material-symbols-outlined" style="color: red;">
+            podcasts
+            </span></li>
+         <li>Testimony</li>
+         <li>community</li>  
+     </ul>
+     </div>
+</footer>
+        
+
+</body>
+
+</html>
